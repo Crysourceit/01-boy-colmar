@@ -26,33 +26,27 @@
   </head>
 
   <body class="w-screen min-h-dvh">
-    <!-- <h1
-      class="h-auto p-4 text-xl font-semibold text-center bg-mint-200 text-neutral-900 hover:scale-105 md:text-3xl md:bg-sky-600 md:text-sky-50 md:text-shadow-sm"
-    >
-      Welcome to <br class="md:hidden" />Colmar Academy
-    </h1> -->
-
     <header>
       <!-- Mobile -->
-      <nav class="flex justify-evenly h-16 md:hidden">
-        <img src="./images/ic-logo.svg" alt="ic-logo" />
-        <img src="./images/ic-on-campus.svg" alt="ic-on-campus" />
-        <img src="./images/ic-online.svg" alt="ic-online" />
-        <img src="./images/ic-login.svg" alt="ic-login" />
+      <nav class="flex justify-evenly items-center h-16 md:hidden">
+        <img src="./images/ic-logo.svg" alt="ic-logo" class="w-10 h-10" />
+        <img src="./images/ic-on-campus.svg" alt="ic-on-campus" class="w-10 h-10"/>
+        <img src="./images/ic-online.svg" alt="ic-online" class="w-10 h-10"/>
+        <img src="./images/ic-login.svg" alt="ic-login" class="w-10 h-10"/>
       </nav>
       <!-- Desktop -->
       <nav class="hidden md:flex justify-between h-16">
         <div class="flex items-center p-8 ml-6">
-          <img src="./images/ic-logo.svg" alt="ic-logo" />
-          <span class="font-semibold">COLMAR</span>
-          <p class="font-light">ACADEMY</p>
+          <img src="./images/ic-logo.svg" alt="ic-logo" class="w-10 h-10" />
+          <span class="font-semibold text-2xl">COLMAR</span>
+          <p class="font-thin text-2xl">ACADEMY</p>
         </div>
 
         <div class="flex items-center gap-4 mr-6">
-          <p class="">On campus</p>
-          <p class="">Online</p>
-          <p class="">or companies</p>
-          <p class="">Sign in</p>
+          <p class="text-xl font-extralight">On campus</p>
+          <p class="text-xl font-extralight">Online</p>
+          <p class="text-xl font-extralight">or companies</p>
+          <p class="text-xl font-extralight">Sign in</p>
         </div>
       </nav>
     </header>
@@ -67,8 +61,8 @@
         <div class="my-8 mx-4 items-center">
           <h2 class="text-4xl font-semibold mb-8">Learn something new everyday</h2>
           <p class="text-2xl mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <div class="w-auto flex justify-center bg-gray-400 py-2">
-            <button class="text-center text-white">Start Here</button>
+          <div class="w-auto flex justify-center bg-gray-400 py-2 cursor-progress ...">
+            <button class="text-center text-white "><a href="#" target="_blank">Start Here</a></button>
           </div>
         </div>
       </section>
@@ -152,26 +146,27 @@
 
       <section class="thesis flex flex-col items-center md:hidden">
         <div class="container flex flex-col items-center min-w-full">
-          <div class="mt-8 mb-4 ">
+          <div class="mt-8 mb-4">
             <h2 class="text-4xl font-semibold">Thesis exhibits</h2>
           </div>
           <div class="min-w-full">
-            <video claadadfass="block w-full object-cover" controls>
+            <video class="block w-full object-cover" controls>
               <source src="./videos/thesis.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
-          <div class="min-w-full mt-10 ml-4 mb-4">
-            <p class="text-left text-lg font-extralight">
-              © 2016 Colmar Academ. All right reserved
-            </p>
-          </div>
         </div>
       </section>
+
+      <footer>
+        <div class="min-w-full mt-10 mb-4 md:hidden">
+          <p class="text-left text-lg font-extralight">© 2016 Colmar Academ. All right reserved</p>
+        </div>
+      </footer>
     </main>
 
     <!-- Desktop -->
-    <main class="hero hidden md:flex flex-col">
+    <main class="hidden md:flex flex-col">
       <section class="hero flex items-center bg-gray-200">
         <div class="my-8 mx-6 max-w-[60%]">
           <img src="./images/banner.jpg" alt="banner" class="w-full" />
@@ -180,8 +175,8 @@
         <div class="flex flex-col justify-center items-start gap-10 mr-8">
           <h2 class="text-4xl font-semibold">Learn something new everyday</h2>
           <p class="text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <div class="flex justify-center w-[80%] bg-gray-800 py-2">
-            <button class="text-center text-white">Start Here</button>
+          <div class="flex justify-center w-[80%] bg-gray-800 py-2 cursor-progress ...">
+            <button class="text-center text-white "><a href="#" target="_blank">Start Here</a></button>
           </div>
         </div>
       </section>
@@ -331,12 +326,55 @@
         </div>
       </section>
 
-      <section>
-        <div></div>
+      <section class="thesis flex flex-col items-center">
+        <div class="mt-8 mb-8">
+          <h2 class="text-6xl font-semibold">Thesis exhibit</h2>
+        </div>
+
+        <div class="container-root flex ml-6 my-8">
+          <div class="container-items flex flex-col max-w-[60%] mr-6">
+            <video controls class="block object-cover">
+              <source src="./videos/thesis.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <div class="max-w-[90%]">
+              <h2 class="font-semibold text-xl mt-6 mb-2">Reimagine urban</h2>
+              <p class="font-extralight">
+                "Curabitur vitae libero in sul porttitor consequat. Aliquam et commodo lectus, nec
+                consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam ege maana
+                laoreet. efficitur dolor conseauat. tristique ligula."
+              </p>
+            </div>
+          </div>
+
+          <div class="container-items flex flex-col max-w-[40%]">
+            <div class="flex bg-gray-200">
+              <div class="max-w-[35%] h-auto my-4 mx-4">
+                <img src="./images/thesis-fisma.jpg" alt="thesis-fisma" />
+              </div>
+              <div class="max-w-[65%] flex flex-col justify-center gap-3">
+                <h2 class="font-semibold text-2xl">Fisma: Design and Prototype</h2>
+                <p class="font-extralight">Designer showcase of now prototype product</p>
+              </div>
+            </div>
+
+            <div class="flex">
+              <div class="max-w-[35%] h-auto my-4 mx-4">
+                <img src="./images/thesis-now-and-then.jpg" alt="thesis-now-and-then" />
+              </div>
+              <div class="max-w-[65%] flex flex-col justify-center gap-3">
+                <h2 class="font-semibold text-2xl">Now and then</h2>
+                <p class="font-extralight">Research study about New York</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <footer>
-        <div></div>
+        <div class="min-w-full ml-6 mb-4">
+          <p class="text-left text-lg font-extralight">© 2016 Colmar Academ. All right reserved</p>
+        </div>
       </footer>
     </main>
   </body>
